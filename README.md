@@ -60,14 +60,12 @@ The application checks code against team standards:
 Each violation includes:
 
 - Rule Name
-- Line Number
 - Suggested Fix
 
 Example:
 
 ```text
 Rule: Use camelCase
-Line: 1
 Fix: Replace snake_case with camelCase
 ```
 
