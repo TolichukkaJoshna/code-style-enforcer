@@ -42,16 +42,10 @@ This project solves that problem by combining AI-style memory with automated cod
 
 The application checks code against team standards:
 
-1. camelCase Naming
-2. No console.log Statements
-3. Function Comment Requirement
-4. No Hardcoded Secrets
-5. Unused Variables
-6. Duplicate Imports
-7. Missing Semicolons
-8. TODO Detection
-9. Long Line Detection
-10. Trailing Whitespace Detection
+- camelCase Naming
+- No console.log Statements
+- Function Comment Requirement
+- No Hardcoded Secrets
 
 ---
 
