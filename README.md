@@ -83,7 +83,7 @@ This allows the system to remember team standards across sessions.
          |
          v
 +------------------+
-| Flask Backend |
+| Flask Backend    |
 +--------+---------+
          |
          |
@@ -125,7 +125,7 @@ This allows the system to remember team standards across sessions.
 
 ## Parcle
 
-Parcle is used as the persistent memory layer.
+Parcle enables persistent memory by storing team coding standards and retrieving them whenever code is analyzed, ensuring consistent rule enforcement across sessions.
 
 Stored information:
 
@@ -214,7 +214,7 @@ git clone <repository-url>
 ```bash
 cd backend
 
-pip install flask flask-cors
+pip install -r requirements.txt
 
 python app.py
 ```
@@ -266,17 +266,17 @@ Missing function comment
 
 ---
 
-#Depolyment
+Deployment
 
-Live Project
+Frontend:
+https://code-style-enforcer.vercel.app/
 
-Frontend: https://code-style-enforcer.vercel.app/
+Backend API:
+https://code-style-enforcer.onrender.com/
 
-Backend API: https://code-style-enforcer.onrender.com/
-
-Hosting
-Frontend deployed on Vercel
-Backend deployed on Render
+Hosting:
+- Frontend deployed on Vercel
+- Backend deployed on Render
 
 The application is publicly accessible through cloud-hosted services.
 
