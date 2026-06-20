@@ -272,7 +272,7 @@ Hardcoded secret detected
 
 ---
 
-Deployment
+# Deployment
 
 Frontend:
 https://code-style-enforcer.vercel.app/
