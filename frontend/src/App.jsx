@@ -27,11 +27,14 @@ function App() {
     if (!code.trim()) return;
     setLoading(true);
     setError(null);
-    try {
-      const res = await axios.post("http://127.0.0.1:5000/check", { code });
-      setViolations(res.data);
-      setChecked(true);
-    } catch {
+   try {
+  const res = await axios.post(
+    "https://code-style-enforcer.onrender.com/check",
+    { code }
+  );
+  setViolations(res.data);
+  setChecked(true);
+}catch {
       setError("Couldn't reach the checker. Is the backend running?");
     } finally {
       setLoading(false);
