@@ -250,9 +250,14 @@ http://localhost:5173
 Sample Input:
 
 ```javascript
-function user_name() {
-  console.log("hello");
-}
+const user_name = "John";
+const api_key = "12345";
+
+console.log(user_name);
+
+function calculate_total(a, b) {
+  return a + b;
+} 
 ```
 
 Expected Output:
@@ -261,6 +266,7 @@ Expected Output:
 Use camelCase
 No console.log
 Missing function comment
+Hardcoded secret detected
 
 ```
 
