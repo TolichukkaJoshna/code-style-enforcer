@@ -117,9 +117,9 @@ This allows the system to remember team standards across sessions.
 
 ## Backend
 
-- Node.js
-- Express.js
-- CORS
+- Python
+- Flask
+- Flask-CORS
 
 ## Memory Layer
 
