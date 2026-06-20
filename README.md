@@ -89,7 +89,7 @@ This allows the system to remember team standards across sessions.
          |
          v
 +------------------+
-| Express Backend  |
+| Flask Backend |
 +--------+---------+
          |
          |
@@ -169,25 +169,40 @@ Enter Pro was used for:
 # Project Structure
 
 ```text
-sentient-engineer/
+code-style-enforcer/
 
 ├── backend
+│   ├── app.py
+│   ├── checker.py
 │   ├── server.js
-│   ├── checker.js
-│   ├── memoryService.js
-│   └── .env
+│   ├── test-parcle.py
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── .env
+│   └── __pycache__
 │
 ├── frontend
+│   ├── public
+│   │   ├── favicon.svg
+│   │   └── icons.svg
+│   │
 │   ├── src
+│   │   ├── assets
 │   │   ├── App.jsx
 │   │   ├── App.css
-│   │   └── main.jsx
+│   │   ├── main.jsx
+│   │   └── index.css
 │   │
-│   └── package.json
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── vite.config.js
+│   ├── eslint.config.js
+│   └── index.html
 │
-└── README.md
+├── .env
+├── README.md
+└── .gitignore
 ```
-
 ---
 
 # Installation
@@ -205,9 +220,9 @@ git clone <repository-url>
 ```bash
 cd backend
 
-npm install
+pip install flask flask-cors
 
-node server.js
+python app.py
 ```
 
 Server runs on:
@@ -241,14 +256,8 @@ http://localhost:5173
 Sample Input:
 
 ```javascript
-const user_name = "John";
-
-const api_key = "12345";
-
-console.log(user_name);
-
-function calculate_total(a, b) {
-  return a + b;
+function user_name() {
+  console.log("hello");
 }
 ```
 
@@ -256,13 +265,26 @@ Expected Output:
 
 ```text
 Use camelCase
-Hardcoded secret detected
 No console.log
 Missing function comment
-Unused variable
+
 ```
 
 ---
+
+#Depolyment
+
+Live Project
+
+Frontend: https://code-style-enforcer.vercel.app/
+
+Backend API: https://code-style-enforcer.onrender.com/
+
+Hosting
+Frontend deployed on Vercel
+Backend deployed on Render
+
+The application is publicly accessible through cloud-hosted services.
 
 # Future Improvements
 
