@@ -83,7 +83,7 @@ This allows the system to remember team standards across sessions.
          |
          v
 +------------------+
-| Flask Backend      |
+| Flask Backend    |
 +--------+---------+
          |
          |
