@@ -272,6 +272,31 @@ Hardcoded secret detected
 
 ---
 
+## Demo Video
+
+Watch the project demonstration here:
+
+🎥 Demo Video: https://drive.google.com/file/d/13z7CmyaVYUZuKz5uBGlpoAtIyMSkUqox/view?usp=drivesdk
+
+The video demonstrates:
+
+* Project Overview
+* Parcle Memory Integration
+* Code Analysis Workflow
+* Rule Enforcement
+* Violation Detection
+* Suggested Fixes
+* Live Application Demo
+
+### Demo Flow
+
+1. User pastes JavaScript code.
+2. Backend retrieves coding standards from Parcle memory.
+3. Checker Engine analyzes the code.
+4. Violations are detected.
+5. Suggested fixes are generated.
+6. Results are displayed in the frontend.
+
 # Deployment
 
 Frontend:
